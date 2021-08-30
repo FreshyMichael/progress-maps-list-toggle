@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: Add PluginName
+* Plugin Name: Accordion Listings for Progress Maps 
 * Plugin URI: https://github.com/FreshyMichael/Plugin-Starter
 * Description: Add a Description
 * Version: 1.0.0
@@ -21,13 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 // All About Updates
 
 //  Begin Version Control | Auto Update Checker
-require 'plugin-update-checker/plugin-update-checker.php';
+require 'plugin-update-checker/progress-maps-list-toggle.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 // ***IMPORTANT*** Update this path to New Github Repository Master Branch Path
-	'https://github.com/FreshyMichael/Plugin-Starter',
+	'https://github.com/FreshyMichael/progress-maps-list-toggle',
 	__FILE__,
 // ***IMPORTANT*** Update this to New Repository Master Branch Path
-	'Plugin-Starter'
+	'progress-maps-list-toggle'
 );
 //Enable Releases
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
