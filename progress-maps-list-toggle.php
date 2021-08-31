@@ -1,9 +1,9 @@
 <?php
 /**
-* Plugin Name: Accordion Listings for Progress Maps 
+* Plugin Name: Progress Maps List Toggle
 * Plugin URI: https://github.com/FreshyMichael/progress-maps-list-toggle
-* Description: Add a Description
-* Version: 1.0.0
+* Description: Collapses the list entries, and makes them toggle open/close on title click
+* Version: 1.0.1
 * Author: FreshySites
 * Author URI: https://freshysites.com/
 * License: GNU v3.0
@@ -13,17 +13,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die();
 }
 
-/* Accordion Listings for Progress Maps Start */
+/* Progress Maps - List Toggle Start */
 //______________________________________________________________________________
 function pm_addon_scripts() {
     $dir = plugin_dir_url(__FILE__);
-	wp_enqueue_style('list-and-filter-accordion-style', $dir . '/includes/css/style.css', array(), '1.0.0', 'all');
-   	wp_enqueue_script('list-and-filter-accordion-script', $dir . '/includes/js/list-and-filter-accordion-function.js', array(), '1.0.0', 'true');
+	wp_enqueue_style('list-and-filter-accordion-style', $dir . '/includes/css/style.css', array(), '1.0.1', 'all');
+   	wp_enqueue_script('list-and-filter-accordion-script', $dir . '/includes/js/list-and-filter-accordion-function.js', array(), '1.0.1', 'true');
 }
 add_action( 'wp_enqueue_scripts', 'pm_addon_scripts' );
     
-
-
 //______________________________________________________________________________
 // All About Updates
 
@@ -49,5 +47,5 @@ $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 //$myUpdateChecker->setBranch('stable-branch-name');
 
 //______________________________________________________________________________
-/* Accordion Listings for Progress Maps End */
+/* Progress Maps - List Toggle End */
 ?>
