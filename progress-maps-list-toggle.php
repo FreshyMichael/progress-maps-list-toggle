@@ -13,8 +13,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die();
 }
 
-/* PluginName Start */
+/* Accordion Listings for Progress Maps Start */
 //______________________________________________________________________________
+
+if (! defined('PLUGIN_DIR'){
+	define('PLUGIN_DIR' , dirname(__FILE__).'/');
+}
+    
 
 
 //______________________________________________________________________________
@@ -42,5 +47,5 @@ $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 //$myUpdateChecker->setBranch('stable-branch-name');
 
 //______________________________________________________________________________
-/* PluginName End */
+/* Accordion Listings for Progress Maps End */
 ?>
