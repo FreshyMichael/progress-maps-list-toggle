@@ -1,10 +1,9 @@
 .cspml_details_content{
-		display:none;
-	}
-
-	.show-the-listings{
-		display:block!important;
-	}
-	div.cspml_details_title{
-		cursor:pointer;
+	display:none;
+}
+.show-the-listings{
+	display:block!important;
+}
+div.cspml_details_title{
+	cursor:pointer;
 }
