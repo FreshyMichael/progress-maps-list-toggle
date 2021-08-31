@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Accordion Listings for Progress Maps 
-* Plugin URI: https://github.com/FreshyMichael/Plugin-Starter
+* Plugin URI: https://github.com/FreshyMichael/progress-maps-list-toggle
 * Description: Add a Description
 * Version: 1.0.0
 * Author: FreshySites
