@@ -28,7 +28,7 @@ add_action( 'wp_enqueue_scripts', 'pm_addon_scripts' );
 // All About Updates
 
 //  Begin Version Control | Auto Update Checker
-require 'plugin-update-checker/progress-maps-list-toggle.php';
+require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 // ***IMPORTANT*** Update this path to New Github Repository Master Branch Path
 	'https://github.com/FreshyMichael/progress-maps-list-toggle',
