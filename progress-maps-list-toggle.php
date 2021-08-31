@@ -15,10 +15,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /* Accordion Listings for Progress Maps Start */
 //______________________________________________________________________________
-
-if (! defined('PLUGIN_DIR'){
-	define('PLUGIN_DIR' , dirname(__FILE__).'/');
+function pm_addon_scripts() {
+    $dir = plugin_dir_url(__FILE__);
+	wp_enqueue_style('list-and-filter-accordion-style', $dir . '/includes/css/style.css', array(), '1.0.0', 'all');
+   	wp_enqueue_script('list-and-filter-accordion-script', $dir . 'includes/js/list-and-filter-accordion-function.js', array(), '1.0.0', 'true');
 }
+add_action( 'wp_enqueue_scripts', 'pm_addon_scripts' );
     
 
 
